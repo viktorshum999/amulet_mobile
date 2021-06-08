@@ -57,6 +57,7 @@ class _MyStatefulWidget2State extends State<MyStatefulWidget2> {
     else
       Toast.show("Registration error", context,
           duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
+    //sample
   }
 
   void createUser() {
