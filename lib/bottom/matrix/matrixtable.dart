@@ -720,46 +720,6 @@ class _TableState extends State<Table> {
                             ),
                           ),
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black12.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
-                                ),
-                              ],
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10.0)),
-                              color: Colors.red),
-                          padding: EdgeInsets.all(5),
-                          margin: EdgeInsets.all(5),
-                          // width: 75,
-                          // height: 100,
-                          child: Text(
-                            'Быт\n 11',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontFamily: 'TrajanPro3Regular',
-                              foreground: Paint()..shader = linearGradient,
-                              shadows: <Shadow>[
-                                Shadow(
-                                  offset: Offset(1.0, 1.0),
-                                  blurRadius: 3.0,
-                                  color: Color.fromARGB(255, 0, 0, 0),
-                                ),
-                                Shadow(
-                                  offset: Offset(1.0, 1.0),
-                                  blurRadius: 8.0,
-                                  color: Color(0xFF2F2E60),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                     Container(
@@ -803,6 +763,49 @@ class _TableState extends State<Table> {
                     ),
                   ],
                 ),
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset:
+                                  Offset(0, 3), // changes position of shadow
+                            ),
+                          ],
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          color: Colors.red),
+                      padding: EdgeInsets.all(5),
+                      margin: EdgeInsets.all(5),
+                      // width: 75,
+                      // height: 100,
+                      child: Text(
+                        'Быт\n 11',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontFamily: 'TrajanPro3Regular',
+                          foreground: Paint()..shader = linearGradient,
+                          shadows: <Shadow>[
+                            Shadow(
+                              offset: Offset(1.0, 1.0),
+                              blurRadius: 3.0,
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                            Shadow(
+                              offset: Offset(1.0, 1.0),
+                              blurRadius: 8.0,
+                              color: Color(0xFF2F2E60),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                )
                 // IconButton(
                 //   icon: Icon(Icons.check_box),
                 //   onPressed: () => (0),
