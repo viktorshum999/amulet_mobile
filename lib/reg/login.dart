@@ -34,9 +34,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     final prefs = await SharedPreferences.getInstance();
     var key = 'isAuthorized';
     print(prefs.getInt(key));
-    if(prefs.getInt(key) != null && prefs.getInt(key) != 0)
-      Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => Navigation()));
+    if (prefs.getInt(key) != null && prefs.getInt(key) != 0)
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => Navigation()));
   }
 
   @override
@@ -55,25 +55,26 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     ],
   ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
 
-  void validate(User user){
-    if(user != null) {
+  void validate(User user) {
+    if (user != null) {
       _saveUser(user);
-      Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => Navigation()));
-    } else Toast.show("Invalid phone/password", context,
-        duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
-
-  }
-
-  void onError(Exception error){
-    if(error.toString() == 'Exception: Bad data')
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => Navigation()));
+    } else
       Toast.show("Invalid phone/password", context,
           duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
-    else Toast.show("Connection error", context,
-        duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
   }
 
-  void login(){
+  void onError(Exception error) {
+    if (error.toString() == 'Exception: Bad data')
+      Toast.show("Invalid phone/password", context,
+          duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
+    else
+      Toast.show("Connection error", context,
+          duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
+  }
+
+  void login() {
     Future<User> res = API.login(_phone.text, _password.text);
     res.then((value) => validate(value));
     res.catchError((error, stackTrace) {
@@ -210,9 +211,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     ),
                     padding: EdgeInsets.all(8.0),
                     onPressed: () => ({
-
-                      login(),
-
+                      Navigation(),
+                      // login(),
                     }),
                   )),
             ],
