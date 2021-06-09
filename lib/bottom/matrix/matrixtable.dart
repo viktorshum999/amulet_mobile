@@ -100,7 +100,7 @@ class _TableState extends State<Table> {
                             ),
                           ],
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          color: Colors.red),
+                          color: Color(0xFFefe6dd)),
                       padding: EdgeInsets.all(5),
                       margin: EdgeInsets.all(5),
                       // width: 75,
@@ -111,7 +111,8 @@ class _TableState extends State<Table> {
                         style: TextStyle(
                           fontSize: 10,
                           fontFamily: 'TrajanPro3Regular',
-                          foreground: Paint()..shader = linearGradient,
+                          color: Colors.black,
+                          // foreground: Paint()..shader = linearGradient,
                           shadows: <Shadow>[
                             Shadow(
                               offset: Offset(1.0, 1.0),

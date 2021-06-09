@@ -38,17 +38,18 @@ class _MatrixDataState extends State<MatrixData> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+            automaticallyImplyLeading: false,
+            iconTheme: IconThemeData(
+              color: Color(0xFFFEDA5B), //change your color here
+            ),
             title: Text(
               'РАССЧИТАТЬ МАТРИЦУ',
               style: TextStyle(
                   fontFamily: 'TrajanPro3Regular',
                   foreground: Paint()..shader = linearGradient),
             ),
-            iconTheme: IconThemeData(
-              color: Color(0xFFFEDA5B), //change your color here
-            ),
             backgroundColor: Colors.transparent,
-            elevation: 0.0,
+            elevation: 0.1,
             centerTitle: true),
         extendBodyBehindAppBar: true,
         body: Center(

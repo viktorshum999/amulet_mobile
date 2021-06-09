@@ -20,16 +20,19 @@ class _MatrixState extends State<Matrix> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
-            'РАССЧИТАТЬ МАТРИЦУ',
-            style: TextStyle(
-                fontFamily: 'TrajanPro3Regular',
-                foreground: Paint()..shader = linearGradient),
-          ),
-          iconTheme: IconThemeData(
-            color: Color(0xFFFEDA5B), //change your color here
-          ),
-        ),
+            automaticallyImplyLeading: false,
+            iconTheme: IconThemeData(
+              color: Color(0xFFFEDA5B), //change your color here
+            ),
+            title: Text(
+              'РАССЧИТАТЬ МАТРИЦУ',
+              style: TextStyle(
+                  fontFamily: 'TrajanPro3Regular',
+                  foreground: Paint()..shader = linearGradient),
+            ),
+            backgroundColor: Colors.transparent,
+            elevation: 0.1,
+            centerTitle: true),
         body: Center(
           child: Container(
             width: double.infinity,

@@ -28,11 +28,16 @@ class _MyAmuletsState extends State<MyAmulets> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          leading: new IconButton(
+            icon: new Icon(Icons.ac_unit),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          automaticallyImplyLeading: false,
           iconTheme: IconThemeData(
             color: Color(0xFFFEDA5B), //change your color here
           ),
           title: Text(
-            'ВЫБРАТЬ АМУЛЕТ',
+            'МОИ АМУЛЕТЫ',
             style: TextStyle(
                 fontFamily: 'TrajanPro3Regular',
                 foreground: Paint()..shader = linearGradient),

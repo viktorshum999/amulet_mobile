@@ -28,6 +28,7 @@ class _ChooseState extends State<Choose> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          automaticallyImplyLeading: false,
           iconTheme: IconThemeData(
             color: Color(0xFFFEDA5B), //change your color here
           ),
