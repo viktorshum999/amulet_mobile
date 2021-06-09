@@ -29,7 +29,7 @@ class _MyAmuletsState extends State<MyAmulets> {
     return Scaffold(
       appBar: AppBar(
           leading: new IconButton(
-            icon: new Icon(Icons.ac_unit),
+            icon: new Icon(Icons.person),
             onPressed: () => Navigator.of(context).pop(),
           ),
           automaticallyImplyLeading: false,
