@@ -6,7 +6,6 @@ import 'Splashscreen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:blur_bottom_bar/blur_bottom_bar.dart';
 
-// 1231
 void main() {
   runApp(MyApp());
 }
