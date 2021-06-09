@@ -115,6 +115,8 @@ class _NavigationState extends State<Navigation> {
         children: <Widget>[
           _widgetOptions.elementAt(_selectedIndex),
           BlurBottomView(
+            showSelectedLabels: true,
+              showUnselectedLabels: true,
               bottomNavigationBarItems: <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   // title: Text('МОИ\nАМУЛЕТЫ'),
