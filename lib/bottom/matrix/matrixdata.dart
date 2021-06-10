@@ -1,4 +1,5 @@
 import 'package:amulet_mobile/bottom/matrix/matrixtable.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// This is the stateful widget that the main application instantiates.
@@ -94,6 +95,16 @@ class _MatrixDataState extends State<MatrixData> {
                   height: 10,
                 ),
                 // СЮДА ДАТУ ПОСТАВИТЬ ООООООООООООООООООООООООООО
+                Container(
+                  height: 200,
+                  child: CupertinoDatePicker(
+                    mode: CupertinoDatePickerMode.date,
+                    initialDateTime: DateTime(1969, 1, 1),
+                    onDateTimeChanged: (DateTime newDateTime) {
+                      // Do something
+                    },
+                  ),
+                ),
                 SizedBox(
                   height: 30,
                 ),
