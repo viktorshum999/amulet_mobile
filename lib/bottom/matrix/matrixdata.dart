@@ -93,60 +93,6 @@ class _MatrixDataState extends State<MatrixData> {
                 SizedBox(
                   height: 10,
                 ),
-                Container(
-                  height: 50,
-                  width: 150,
-                  child: TextField(
-                    controller: _controller,
-                    onSubmitted: (String value) async {
-                      await showDialog<void>(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Спасибо!'),
-                            content: Text(
-                                'Вы ввели "$value", длина которого ${value.characters.length}.'),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: const Text('OK'),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
-                  ),
-                ),
-                Container(
-                  height: 50,
-                  width: 150,
-                  child: TextField(
-                    controller: _controller,
-                    onSubmitted: (String value) async {
-                      await showDialog<void>(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Спасибо!'),
-                            content: Text(
-                                'Вы ввели "$value", длина которого ${value.characters.length}.'),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: const Text('OK'),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
-                  ),
-                ),
                 SizedBox(
                   height: 30,
                 ),
