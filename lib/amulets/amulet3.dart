@@ -27,7 +27,7 @@ class _Amulet3State extends State<Amulet3> {
               color: Color(0xFFFEDA5B), //change your color here
             ),
             title: Text(
-              'SEXY CHAKRA',
+              'ДЕНЕЖНЫЙ АМУЛЕТ',
               style: TextStyle(
                   fontFamily: 'TrajanPro3Regular',
                   foreground: Paint()..shader = linearGradient),
@@ -97,10 +97,12 @@ class _TableState extends State<Table> {
                       ],
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       color: Colors.red),
-                  height: 350,
+                  height: 330,
                   width: 250,
                   // color: Colors.red,
-                  child: Image(image: AssetImage('images/Frame4.png'))),
+                  child: FittedBox(
+                      fit: BoxFit.fill,
+                      child: Image(image: AssetImage('images/Frame3.png')))),
               Positioned(
                   bottom: 230,
                   right: 80,

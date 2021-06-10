@@ -97,10 +97,12 @@ class _TableState extends State<Table> {
                       ],
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       color: Colors.red),
-                  height: 350,
+                  height: 330,
                   width: 250,
                   // color: Colors.red,
-                  child: Image(image: AssetImage('images/Frame4.png'))),
+                  child: FittedBox(
+                      fit: BoxFit.fill,
+                      child: Image(image: AssetImage('images/Frame4.png')))),
               Positioned(
                   bottom: 230,
                   right: 80,
