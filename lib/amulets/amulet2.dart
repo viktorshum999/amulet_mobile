@@ -104,13 +104,15 @@ class _TableState extends State<Table> {
                       fit: BoxFit.fill,
                       child: Image(image: AssetImage('images/Frame2.png')))),
               Positioned(
-                  bottom: 230,
-                  right: 80,
+                  top: 41,
+                  left: 41,
                   child: Text(
-                    "???".toUpperCase(),
+                    "373".toUpperCase(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 14.0,
+                      fontFamily: 'TrajanPro3Regular',
+                      fontSize: 20.0,
+                      foreground: Paint()..shader = linearGradient,
                     ),
                   )),
               Positioned(

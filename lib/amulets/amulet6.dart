@@ -96,7 +96,7 @@ class _TableState extends State<Table> {
                         ),
                       ],
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      color: Colors.red),
+                      color: Colors.white24),
                   height: 330,
                   width: 250,
                   // color: Colors.red,
@@ -104,13 +104,15 @@ class _TableState extends State<Table> {
                       fit: BoxFit.fill,
                       child: Image(image: AssetImage('images/Frame6.png')))),
               Positioned(
-                  bottom: 230,
-                  right: 80,
+                  top: 20,
+                  left: 50,
                   child: Text(
-                    "???".toUpperCase(),
+                    "24113134323189".toUpperCase(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 14.0,
+                      fontFamily: 'TrajanPro3Regular',
+                      fontSize: 20.0,
+                      foreground: Paint()..shader = linearGradient,
                     ),
                   )),
               Positioned(
